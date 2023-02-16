@@ -58,22 +58,26 @@ h1, h2, p {
   justify-content: center;
   width: 300px;
   margin-top: 20px;
+  margin-bottom: 20px;
 }
 
+body form input, textarea{
+  border: none;
+  text-align: center;
+}
 
+form div{
+  margin-bottom: 20px;
+  width: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
+form button{
+  justify-content: center;
+  align-items: center;
+}
 
 
 .footer{
