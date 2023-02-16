@@ -59,6 +59,15 @@ ul{
   margin-left: 50%;
 }
 
+h1, h2, p {
+  margin: 5px;
+}
+
+button{
+  width: 120px;
+  padding: 5px;
+}
+
 .main-subSection1{
   display: flex;
   flex: 1;
@@ -66,7 +75,6 @@ ul{
   background-color: aquamarine;
   justify-content: space-around;
   align-items: center;
-
 }
 
 .main-subSection1 div{
@@ -85,4 +93,24 @@ ul{
 .footer{
   height: 70px;
   background-color: rgb(103, 103, 103);
+  display: flex;
+}
+
+.rights{
+  display: flex;
+  flex: 1;
+  align-items: center;
+  font-size: 12px;
+}
+
+.socialButtons {
+  display: flex;
+  flex: 1;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.socialButtons div{
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
