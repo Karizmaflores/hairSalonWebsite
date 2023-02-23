@@ -18,6 +18,7 @@ div{
 
 .nav-bar{
   width: 400px;
+  text-transform: uppercase;
 }
 
 .main{
@@ -58,6 +59,7 @@ h1, h2, p {
   justify-content: center;
   width: 300px;
   margin-top: 20px;
+  text-transform: uppercase;
 }
 
 /*add image and specifications*/
@@ -80,6 +82,7 @@ h1, h2, p {
 
 .aboutText h2{
   margin-bottom: 0px;
+  text-transform: uppercase;
 }
 
 .aboutText div{

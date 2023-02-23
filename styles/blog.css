@@ -18,6 +18,7 @@ div{
 
 .nav-bar{
   width: 400px;
+  text-transform: uppercase;
 }
 
 .main{
@@ -67,6 +68,7 @@ p{
   width: 300px;
   margin-top: 20px;
   margin-bottom: 20px;
+  text-transform: uppercase;
 }
 
 .blogContainer{
@@ -97,6 +99,10 @@ p{
   border: 1px solid blue;
   align-items: center;
   margin: 5px;
+}
+
+.blogtext button {
+  text-transform: uppercase;
 }
 
 .footer{

@@ -18,6 +18,7 @@ div{
 
 .nav-bar{
   width: 400px;
+  text-transform: uppercase;
 }
 
 .main{
@@ -59,6 +60,7 @@ h1, h2, p {
   width: 300px;
   margin-top: 20px;
   margin-bottom: 20px;
+  text-transform: uppercase;
 }
 
 .galleryPics{

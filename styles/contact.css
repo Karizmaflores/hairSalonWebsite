@@ -18,6 +18,7 @@ div{
 
 .nav-bar{
   width: 400px;
+  text-transform: uppercase;
 }
 
 .main{
@@ -59,11 +60,13 @@ h1, h2, p {
   width: 300px;
   margin-top: 20px;
   margin-bottom: 20px;
+  text-transform: uppercase;
 }
 
 body form input, textarea{
   border: none;
   text-align: center;
+  text-transform: uppercase;
 }
 
 form div{
@@ -77,6 +80,7 @@ form div{
 form button{
   justify-content: center;
   align-items: center;
+  text-transform: uppercase;
 }
 
 
