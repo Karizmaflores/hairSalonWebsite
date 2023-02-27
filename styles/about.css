@@ -96,6 +96,13 @@ ul{
   text-transform: uppercase;
 }
 
+@media (max-width: 576px) {
+  .businessName{
+    text-align: center;
+    width: 70vw;
+  }
+}
+
 /*add image and specifications*/
 .aboutPic{
   border: 2px solid rgb(37, 37, 37);
