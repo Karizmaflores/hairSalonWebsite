@@ -8,12 +8,53 @@ body{
   grid-template-rows: auto 1fr auto;
 }
 
-div{
-  border: 1px solid red;
+/* .header div{
+  border: 1px solid blue;
+} */
+
+.nav-bar{
+  width: 400px;
+  text-transform: uppercase;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  
 }
 
-.header div{
-  border: 1px solid blue;
+.main{
+  display: flex;
+  flex-direction: column;
+}
+
+ul{
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-transform: uppercase;
+  
+}
+
+a:link, a:visited {
+  text-decoration: none; 
+  color:white;
+  }
+
+  
+a:hover, a:active {
+  color: rgb(17, 65, 86);
+  text-decoration: none; 
+}
+
+.header{
+  height: auto;
+  background-color: rgb(0, 0, 0);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 30px;
 }
 
 .nav-bar{
@@ -36,24 +77,17 @@ ul{
   text-transform: uppercase;
 }
 
-.header{
-  height: auto;
-  background-color: lightgrey;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding-bottom: 20px;
-  padding-top: 20px;
+
+.businessName h2 {
+  margin: 5px;
+  color: white;
 }
 
-h1, h2, p {
-  margin: 5px;
-}
 
 .businessName{
-  border: 2px solid rgb(208, 36, 255);
-  background-color: antiquewhite;
+  /* border: 2px solid rgb(208, 36, 255); */
+  background-color: rgb(17, 65, 86);
+  font-family: Arial, Helvetica, sans-serif;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -64,13 +98,17 @@ h1, h2, p {
 
 /*add image and specifications*/
 .aboutPic{
-  border: 2px solid rgb(208, 36, 255);
+  border: 2px solid rgb(37, 37, 37);
+  background: url(../images/samsung-uk-XZXUJUb2eGw-unsplash.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
   height: 300px;
   width: 75%;
   margin-top: 20px;
 }
 
 .aboutText{
+  font-family: Arial, Helvetica, sans-serif;
  margin-top: 20px;
  display: flex;
  flex-direction: column;
@@ -80,24 +118,20 @@ h1, h2, p {
  text-align: center;
 }
 
-.aboutText h2{
-  margin-bottom: 0px;
-  text-transform: uppercase;
-}
-
 .aboutText div{
-  border: 2px solid rgb(53, 216, 146);
+  /* border: 2px solid rgb(53, 216, 146); */
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 70%;
+  padding-bottom: 20px;
 }
 
 
 .footer{
   height: 70px;
-  background-color: rgb(103, 103, 103);
+  background-color: rgb(37, 37, 37);
   display: flex;
 }
 
@@ -106,9 +140,10 @@ h1, h2, p {
   flex: 1;
   align-items: center;
   font-size: 12px;
+  margin-left: 20px;
 }
 
-.socialButtons {
+/* .socialButtons {
   display: flex;
   flex: 1;
   justify-content: space-around;
@@ -118,4 +153,4 @@ h1, h2, p {
 .socialButtons div{
   padding-top: 10px;
   padding-bottom: 10px;
-}
+} */
