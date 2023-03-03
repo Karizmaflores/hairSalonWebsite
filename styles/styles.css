@@ -87,8 +87,11 @@ h1, h2, p, button {
   color: rgb(255, 255, 255);
   background-color: rgb(17, 65, 86);
   margin-top: 50px;
-  padding-left: 15px;
-  padding-right: 15px;
+  /* padding-left: 15px;
+  padding-right: 15px; */
+  padding: 20px 30px;
+  /* adding a bit more space between edge of container and text */
+  /* no reason, just style preference. i think it looks a little less tight */
 }
 
 .main-text p {
@@ -96,17 +99,41 @@ h1, h2, p, button {
   max-width: 600px;
   background-color: rgb(37, 37, 37);
   text-align: center;
-  padding: 10px;
+  /* padding: 10px; */
+  padding: 20px 30px;
+  /* same reason as above */
 }
 
 button{
-  width: 120px;
-  padding: 5px;
+  /* width: 120px;
+  padding: 5px; */
   text-transform: uppercase;
   font-family: Arial, Helvetica, sans-serif;
   border: none;
   background-color: rgb(17, 65, 86);
+  /* setting width as auto */
+  width: auto;
+  /* which allows me to create the width and height with padding */
+  padding: 10px 20px;
+  /* when using a button, always add cursor: pointer. even if this example doesn't lead anywhere when clicked */
+  cursor: pointer;
+  /* added a box shadow to make it stand out a bit */
+  box-shadow: 4px 4px 8px 0px #5c5a5a;
+  /* a little border-radius to soften the corners */
+  border-radius: 8px;
+  /* added hover so of course we need a smooth transition */
+  transition: all 250ms ease-in;
 }
+button:hover {
+  /* this shadow slightly changes. added the spread*/
+  box-shadow: 4px 4px 6px 2px #5c5a5a;
+  /* move the button up one */
+  transform: translateY(-1px);
+  /* switch text color and bg color */
+  color: rgb(17, 65, 86);
+  background-color: white;
+}
+/* i love buttons. so much involved. so i went at it! lol */
 
 @media (max-width: 576px) {
   .main-subSection1 ul{
@@ -127,11 +154,18 @@ button{
     justify-content: center;
     align-items: center;
     text-align: center;
+    padding: 60px 0;
+    min-height: 425px;
+    height: auto;
+    /* i'd add a bit more space between the text in the main-background element and the header and subSection */
+    /* adding min-height means the element will at least be 425px but because of padding 60px, its allowed to be bigger */
+    /* set height: auto because you have height: 425px on default so this resets it and allows the main-background element to get bigger. */
+  }
   }
   .nav-bar{
     width: 90vw;
   }
-}
+
 
 .main-subSection1 {
   display: flex;
@@ -140,6 +174,8 @@ button{
   background-color: rgb(255, 255, 255);
   justify-content: space-evenly;
   align-items: center;
+  padding: 60px 0;
+  /* adding a bit more space between top element and bottom element */
 } 
 
 .main-subSection1 ul {
