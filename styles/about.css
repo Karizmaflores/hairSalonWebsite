@@ -24,6 +24,8 @@ body{
 .main{
   display: flex;
   flex-direction: column;
+  padding: 80px 0;
+  /* little space from top and bottom element */
 }
 
 ul{

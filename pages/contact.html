@@ -31,26 +31,29 @@
       <form>
         <div>
           <label for="name"></label>
-          <input type="text" name="name" id="name" value="NAME">
+          <!-- using the value attribute leaves an acutal value -->
+          <!-- which makes the user have to delete before typing -->
+          <!-- use placeholder attribute instead to inform the user what they should be typing -->
+          <input type="text" name="name" id="name" placeholder="NAME">
       </div>
       <div>
         <label for="address"></label>
         <input type="text" name="address" id="address" 
-        value="ADDRESS">
+        placeholder="ADDRESS">
       </div>
       <div>
         <label for="email"></label>
         <input type="email" name="email" id="email"
-        value="EMAIL">
+        placeholder="EMAIL">
       </div>
       <div>
         <label for="phone"></label>
         <input type="tel" name="phone" id="phone"
-        value="PHONE NUMBER">
+        placeholder="PHONE NUMBER">
       </div>
       <div>
         <label for="message"></label>
-        <textarea  value="Name"id="message" name="message" minlength="10" maxlength="200" >MESSAGE</textarea>
+        <textarea  placeholder="MESSAGE" id="message" name="message" minlength="10" maxlength="200" ></textarea>
       </div>
       <div>
         <button type="submit">Send</button>
